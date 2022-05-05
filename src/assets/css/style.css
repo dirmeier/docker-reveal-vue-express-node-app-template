@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap");
+
+body {
+  font-family: "Abel", sans-serif;
+}
+
+.reveal,
+.reveal h3,
+.reveal h4 {
+  font-family: "Abel", sans-serif;
+}
+
+text {
+  font-family: "Abel", sans-serif;
+}
+
+p {
+  font-size: 35px;
+}
+
+.reveal .slides > section {
+  text-align: left;
+}
+
+.reveal {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.95);
+  background-blend-mode: lighten;
+}
+
+tr, th {
+  color: black !important;
+}
