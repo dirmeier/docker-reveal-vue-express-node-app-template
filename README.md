@@ -1,11 +1,14 @@
 # docker-reveal-vue-express-node-app-template
 
-> Another template for web-apps
+[![Project Status](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
+[![ci](https://github.com/dirmeier/docker-reveal-vue-express-node-app-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/dirmeier/docker-reveal-vue-express-node-app-template/actions/workflows)
+
+> Yet another template for web-apps
 
 ## About
 
 This directory contains a webapp that uses reveal.js on the frontend. The entire stack consists of
-Vue.js and express.js
+a VEN (Vue.js, Express.js, Node.js) app running in a Docker container (but can be ran stand alone, too). 
 
 ## Install
 

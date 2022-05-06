@@ -20,7 +20,7 @@ jobs:
       - name: Install Docker container
         run:  docker build -t reveal-docker .
       - name: Run Dockerfile
-        run: docker run -d -p 4000:4000 reveal-docker
+        run: docker run --name testd -d -p 4000:4000 reveal-docker
       - name: Test run
-        run: curl localhost:4000
+        run: docker port testd 4000/tcp
 
