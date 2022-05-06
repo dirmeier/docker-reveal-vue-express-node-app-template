@@ -21,7 +21,7 @@ In the folder run the app using
 
 ```
 npm run build
-npm run serve
+npm run start
 ```
 
 ## Author

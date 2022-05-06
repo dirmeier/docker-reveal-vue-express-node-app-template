@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install Docker
+        uses: docker-practice/actions-setup-docker@master
+      - name: Install Docker container
+        run:  docker build -t reveal-docker .
+      - name: Run Dockerfile
+        run: docker run -d -p 4000:4000 reveal-docker
+      - name: Test run
+        run: curl localhost:4000
+
